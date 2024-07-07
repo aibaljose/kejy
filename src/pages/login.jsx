@@ -78,7 +78,7 @@ const Login = () => {
 
 
      
-      {error && <p>{error}</p>}
+      {error && alert(error)}
     </div>
   );
 };
