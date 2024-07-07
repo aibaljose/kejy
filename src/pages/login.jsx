@@ -81,7 +81,7 @@ const Login = () => {
 
 
      
-      {error && alert(error)}
+      {error && alert("Error invaid username or password")}
     </div>
   );
 };
