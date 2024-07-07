@@ -7,7 +7,9 @@ import Logo from "./css/logo.png"
 const Login = () => {
 
 
-
+  if (currentUser) {
+    return <Navigate to="/login" />;
+  }
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);

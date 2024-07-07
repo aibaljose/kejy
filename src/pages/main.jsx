@@ -7,7 +7,12 @@ const Main = () => {
   const [count, setcound] = useState(0);
   const { currentUser } = useAuth();
   const [userName, setUserName] = useState(null);
-
+  const [holymass,setholymass] = useState(0);
+  const [adoration,setadoration] = useState(0);
+  const [mercyrostary,setmercyrostary] = useState(0);
+  const [rosary,setrosary] = useState(0);
+  const [creed,setcreed] = useState(0);
+  
   useEffect(() => {
     const fetchUserName = async () => {
       if (currentUser) {
@@ -51,6 +56,14 @@ const Main = () => {
   const counter = () => {
     setcound(count + 1)
   }
+
+  useEffect(() => {
+    const getUsersData = async () => {
+        const usersData = await fetchAllUsers();
+        setUsersData(usersData);
+    };
+    getUsersData();
+}, []);
 
   return (
     <div className='center'>
