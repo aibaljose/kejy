@@ -64,7 +64,7 @@ const Main = () => {
           <div className="phone">
 
             <div className="menu">
-              <div className="time">4:30</div>
+              <div className="time">4:50</div>
               <div className="icons">
                 <div className="network"></div>
                 <div className="battery"></div>
