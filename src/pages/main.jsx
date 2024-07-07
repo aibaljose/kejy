@@ -57,13 +57,7 @@ const Main = () => {
     setcound(count + 1)
   }
 
-  useEffect(() => {
-    const getUsersData = async () => {
-        const usersData = await fetchAllUsers();
-        setUsersData(usersData);
-    };
-    getUsersData();
-}, []);
+ 
 
   return (
     <div className='center'>
