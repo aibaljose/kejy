@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.mianbody {
+  font-family: "Poppins", sans-serif;
+
+  width: 100%;
+  padding: 20px;
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background: url("https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-size: cover;
+  background-position: center center;
+}
+.hcard {
+  /* height: 200px; */
+  width: 100%;
+  gap: 30px;
+  border-radius: 30px;
+  background-color: #000000;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.hcardg {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.hcardf {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.hcard p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+}
+.hcard h3 {
+  font-size: 20px;
+  color: #fff;
+}
+.count1 {
+  border: 1px solid rgba(218, 227, 221, 0.575);
+  padding: 10px;
+  width: 100px;
+
+  height: 100px;
+  border-radius: 60px;
+  background-color: #00000014;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcom {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.welcom .welp {
+  font-size: 33px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+.welcom p{ 
+    color: white;
+}
+.vcard{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #4cb54ad5;
+    display: flex;justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+
+padding: 20px;
+}
+.updater{
+background-color: #ffffff23;
+padding: 10px;
+color: #ffffff;
+padding-left: 30px;
+border-radius: 30px;
+display: flex;
+justify-content: space-around;
+}
+.btn{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;justify-content: center;align-items: center;color: #000000;
+    background-color: #fff;
+}

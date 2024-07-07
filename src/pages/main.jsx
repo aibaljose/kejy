@@ -3,11 +3,12 @@ import { useAuth } from '../AuthContext';
 import { Navigate } from 'react-router-dom';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import bg from "../assets/bg.png"
+import "./css/mainj.css"
 const Main = () => {
   const [count, setcound] = useState(0);
   const { currentUser } = useAuth();
   const [userName, setUserName] = useState(null);
-  const [holymass, setholymass] = useState({});
+  const [data, setdata] = useState({});
   const [adoration, setadoration] = useState(0);
   const [mercyrostary, setmercyrostary] = useState(0);
   const [rosary, setrosary] = useState(0);
@@ -32,7 +33,7 @@ const Main = () => {
           const userDoc2 = await getDoc(userdof2);
           if (userDoc2.exists()) {
             const userName2 = userDoc2.data();
-            setholymass(userName2);
+            setdata(userName2);
 
 
           }
@@ -67,29 +68,110 @@ const Main = () => {
 
 
   return (
-    <div className='center'>
-      {/* <img src={bg} alt="" height="300px" width="100%" /> */}
+    <div className='mianbody'>
+      <div className="welcom">
+        <p className='welp'>Welcome {userName} </p>
+        <p>to Ke Jesus youth Family</p>
+      </div>
 
-      <h1 className='jamt'>JESUS AND ME
-
-        <h2 className='jamt2'>Welcome, {userName} to the Jesus youth family</h2>
-      </h1>
-
-      <div className='scrollarea'>
-        <div className="contentscroll">
-          <div className="cardmain"></div>
-          <div className="cardmain"></div>
-          <div className="cardmain"></div>
+      <div className="hcard">
+        <div className="hcardg">
+          <div className="count1">
+            <h3>{data.holymass}</h3>
+            <p>Holymass</p>
+          </div>
+          <div className="count1">
+            <h3>{data.holymass}</h3>
+            <p>Holymass</p>
+          </div>
+          <div className="count1">
+            <h3>{data.holymass}</h3>
+            <p>Holymass</p>
+          </div>
+        </div>
+        <div className="hcardf">
+          <div className="count1">
+            <h3>{data.holymass}</h3>
+            <p>Holymass</p>
+          </div>
+          <div className="count1">
+            <h3>1000000</h3>
+            <p>Holymass</p>
+          </div>
+          <div className="count1">
+            <h3>{data.holymass}</h3>
+            <p>Holymass</p>
+          </div>
         </div>
 
       </div>
-      <div className="counndercards">
-        <div className="roundcard">Hailmary : {holymass.hailmary}</div>
-        <div className="roundcard">Holymass : {holymass.holymass}</div>
-        <div className="roundcard">Adoration : {holymass.adoration}</div>
+
+      <div className="vcard">
+        <div className="updater">
+          <div className="conrr">
+            <h3>Holy Mass</h3>
+            <p>1000</p>
+          </div>
+          <div className="btn">
+            ADD
+          </div>
+        </div>
+        <div className="updater">
+          <div className="conrr">
+            <h3>Adoration</h3>
+            <p>1000</p>
+          </div>
+          <div className="btn">
+            ADD
+          </div>
+        </div>
+        <div className="updater">
+          <div className="conrr">
+            <h3>Hail Mary</h3>
+            <p>1000</p>
+          </div>
+          <div className="btn">
+            ADD
+          </div>
+        </div>
+        <div className="updater">
+          <div className="conrr">
+            <h3>Apostolic Creed</h3>
+            <p>1000</p>
+          </div>
+          
+          <div className="btn">
+            ADD
+          </div>
+        </div>
+        <div className="updater">
+          <div className="conrr">
+            <h3>Mercy Rosary</h3>
+            <p>1000</p>
+          </div>
+          <div className="btn">
+            ADD
+          </div>
+        </div>
+        <div className="updater">
+          <div className="conrr">
+            <h3>Rsoary</h3>
+            <p>1000</p>
+          </div>
+          <div className="btn">
+            ADD
+          </div>
+        </div>
 
 
+        <div className="updater">
+          <div className="conrr">
+            <h3>UPDATE</h3>
+          </div>
+         
+        </div>
       </div>
+
 
 
     </div>

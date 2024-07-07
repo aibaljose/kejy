@@ -8,7 +8,7 @@ export default defineConfig({
       name: 'JAM JYKE',
       short_name: 'JAM',
       description: 'career starts here',
-      theme_color: '#ffffff',
+      theme_color: '#141414',
       icons: [
         {
           src: '/impact.png',
