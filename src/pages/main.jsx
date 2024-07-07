@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '../AuthContext';
 import { Navigate } from 'react-router-dom';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
-
+import bg from "../assets/bg.png"
 const Main = () => {
   const [count, setcound] = useState(0);
   const { currentUser } = useAuth();
   const [userName, setUserName] = useState(null);
-  const [holymass,setholymass] = useState();
-  const [adoration,setadoration] = useState(0);
-  const [mercyrostary,setmercyrostary] = useState(0);
-  const [rosary,setrosary] = useState(0);
-  const [creed,setcreed] = useState(0);
-  
+  const [holymass, setholymass] = useState({});
+  const [adoration, setadoration] = useState(0);
+  const [mercyrostary, setmercyrostary] = useState(0);
+  const [rosary, setrosary] = useState(0);
+  const [creed, setcreed] = useState(0);
+
   useEffect(() => {
     const fetchUserName = async () => {
       if (currentUser) {
@@ -25,17 +25,17 @@ const Main = () => {
 
           // Reference to the user's document in Firestore
           const userDocRef = doc(db, 'users', uid);
-          const userdof2=doc(db,'countupdate', 'count')
+          const userdof2 = doc(db, 'countupdate', 'count')
 
           // Fetch the user document
           const userDoc = await getDoc(userDocRef);
           const userDoc2 = await getDoc(userdof2);
-if(userDoc2.exists()){
-  const userName = userDoc.data().name; 
-  setholymass(userName);
-  console.log(holymass)
+          if (userDoc2.exists()) {
+            const userName2 = userDoc2.data();
+            setholymass(userName2);
 
-}
+
+          }
           // Check if the document exists and extract the user's name
           if (userDoc.exists()) {
             const userName = userDoc.data().name; // Ensure your document has a "name" field
@@ -64,89 +64,32 @@ if(userDoc2.exists()){
     setcound(count + 1)
   }
 
- 
+
 
   return (
     <div className='center'>
+      {/* <img src={bg} alt="" height="300px" width="100%" /> */}
 
-<h2>Welcome, {userName}</h2>
+      <h1 className='jamt'>JESUS AND ME
 
-      <div className="app">
-      
-        <div className="body">
+        <h2 className='jamt2'>Welcome, {userName} to the Jesus youth family</h2>
+      </h1>
 
-          <div className="phone">
-
-            <div className="menu">
-              <div className="time">4:50</div>
-              <div className="icons">
-                <div className="network"></div>
-                <div className="battery"></div>
-              </div>
-            </div>
-
-            <div className="content">
-
-              <div className="circle">{count}
-              </div>
-
-
-              <div className='switch' onClick={counter}>
-                ADD +1
-              </div>
-
-
-
-
-            </div>
-
-          </div>
+      <div className='scrollarea'>
+        <div className="contentscroll">
+          <div className="cardmain"></div>
+          <div className="cardmain"></div>
+          <div className="cardmain"></div>
         </div>
 
       </div>
+      <div className="counndercards">
+        <div className="roundcard">Hailmary : {holymass.hailmary}</div>
+        <div className="roundcard">Holymass : {holymass.holymass}</div>
+        <div className="roundcard">Adoration : {holymass.adoration}</div>
 
-
-
-
-
-      <div className="app">
-     
-        <div className="body">
-
-          <div className="phone">
-
-            <div className="menu">
-              <div className="time">4:20</div>
-              <div className="icons">
-                <div className="network"></div>
-                <div className="battery"></div>
-              </div>
-            </div>
-
-            <div className="content">
-
-              <div className="circle">{count}
-              </div>
-
-
-              <div className='switch' onClick={counter}>
-                ADD +1
-              </div>
-
-
-
-
-            </div>
-
-          </div>
-        </div>
 
       </div>
-
-
-
-
-
 
 
     </div>
