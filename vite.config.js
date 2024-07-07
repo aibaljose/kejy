@@ -4,6 +4,9 @@ import { VitePWA } from "vite-plugin-pwa";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(),VitePWA({
+    registerType: 'autoUpdate',
+      skipWaiting: true,
+      clientsClaim: true,
     manifest: {
       name: 'Jesus Youth ke',
       short_name: 'JAM',
