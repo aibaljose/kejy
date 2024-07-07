@@ -5,6 +5,14 @@ import { useNavigate,Link  } from 'react-router-dom';
 import Logo from "./css/logo.png"
 
 const Login = () => {
+  const handleClearStorage = () => {
+    localStorage.clear();
+    // Optionally refresh the page or update state to reflect changes
+    window.location.reload(); // Example: Reload the page after clearing localStorage
+  };
+  handleClearStorage()
+
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
