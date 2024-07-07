@@ -20,6 +20,7 @@ const Login = () => {
       navigate('/main');
     } catch (error) {
       setError(error.message);
+      alert("Incorrect Gmail or password")
     }
   };
 
@@ -81,7 +82,7 @@ const Login = () => {
 
 
      
-      {error && alert("Error invaid username or password")}
+      
     </div>
   );
 };

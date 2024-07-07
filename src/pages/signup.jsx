@@ -32,6 +32,7 @@ const SignUp = () => {
             navigate('/main');
         } catch (error) {
             setError(error.message);
+            alert(error.message)
         }
     };
 
@@ -126,7 +127,7 @@ const SignUp = () => {
 
 
 
-            {error && <p>{error}</p>}
+          
         </div>
     );
 };
