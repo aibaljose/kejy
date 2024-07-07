@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { auth } from '../firebase';
+import { useAuth } from '../AuthContext';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate,Link ,Navigate } from 'react-router-dom';
-const { currentUser } = useAuth();
+
 import Logo from "./css/logo.png"
 
 const Login = () => {
-
+  const { currentUser } = useAuth();
 
   if (currentUser) {
     return <Navigate to="/login" />;
