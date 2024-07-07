@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { auth } from '../firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { useNavigate,Link  } from 'react-router-dom';
+import { useNavigate,Link ,Navigate } from 'react-router-dom';
+const { currentUser } = useAuth();
 import Logo from "./css/logo.png"
 
 const Login = () => {

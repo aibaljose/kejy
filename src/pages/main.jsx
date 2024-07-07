@@ -7,7 +7,7 @@ const Main = () => {
   const [count, setcound] = useState(0);
   const { currentUser } = useAuth();
   const [userName, setUserName] = useState(null);
-  const [holymass,setholymass] = useState(0);
+  const [holymass,setholymass] = useState();
   const [adoration,setadoration] = useState(0);
   const [mercyrostary,setmercyrostary] = useState(0);
   const [rosary,setrosary] = useState(0);
@@ -25,10 +25,17 @@ const Main = () => {
 
           // Reference to the user's document in Firestore
           const userDocRef = doc(db, 'users', uid);
+          const userdof2=doc(db,'countupdate', 'count')
 
           // Fetch the user document
           const userDoc = await getDoc(userDocRef);
+          const userDoc2 = await getDoc(userdof2);
+if(userDoc2.exists()){
+  const userName = userDoc.data().name; 
+  setholymass(userName);
+  console.log(holymass)
 
+}
           // Check if the document exists and extract the user's name
           if (userDoc.exists()) {
             const userName = userDoc.data().name; // Ensure your document has a "name" field
