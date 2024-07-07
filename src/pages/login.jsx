@@ -10,7 +10,7 @@ const Login = () => {
   const { currentUser } = useAuth();
 
   if (currentUser) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/main" />;
   }
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
