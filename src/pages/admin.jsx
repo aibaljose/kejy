@@ -28,6 +28,7 @@ const UsersList = () => {
                     <p>{user.course}</p>
                     <p>{user.email}</p>
                     <p>{user.date}</p>
+                    <p>{user.number}</p>
                 </div>
 
             ))}

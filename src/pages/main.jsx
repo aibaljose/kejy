@@ -225,7 +225,7 @@ const Main = () => {
         </div>
         <div className="updater">
           <div className="conrr">
-            <h3>Rsoary</h3>
+            <h3>Rosary</h3>
             <p>{rosary}</p>
           </div>
           <div className="btn">
