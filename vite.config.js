@@ -7,16 +7,16 @@ export default defineConfig({
     manifest: {
       name: 'JAM JYKE',
       short_name: 'JAM',
-      description: 'career starts here',
+      description: 'Jesus youth Ke college',
       theme_color: '#141414',
       icons: [
         {
-          src: '/impact.png',
+          src: '/image.png',
           sizes: '192x192',
           type: 'image/png'
         },
         {
-          src: '/impact.png',
+          src: '/image.png',
           sizes: '512x512',
           type: 'image/png'
         }
