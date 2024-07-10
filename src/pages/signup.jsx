@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { auth, firestore } from '../firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
-import { useNavigate,Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "./css/signup.css"
 import Logo from "./css/logo.png"
 
@@ -14,6 +14,7 @@ const SignUp = () => {
     const [number, setnumber] = useState();
     const [date, setdate] = useState();
     const [addr, setaddr] = useState('');
+    const [year, setyear] = useState('');
     const [error, setError] = useState(null);
     const navigate = useNavigate();
 
@@ -27,7 +28,8 @@ const SignUp = () => {
                 course,
                 number,
                 date,
-                addr
+                addr,
+                year
             });
             navigate('/main');
         } catch (error) {
@@ -59,50 +61,55 @@ const SignUp = () => {
                     <div className="form-group">
 
                         <input type="text" id="name" name="name" placeholder="Enter your Name" value={name}
-                            onChange={(e) => setName(e.target.value)} required="" />
+                            onChange={(e) => setName(e.target.value)} required />
                     </div>
                     <div className="form-group">
 
                         <input type="number" id="number" name="number" value={number}
-                            onChange={(e) => setnumber(e.target.value)} placeholder="whatspp/phno" required="" />
+                            onChange={(e) => setnumber(e.target.value)} placeholder="whatspp/phno" required />
                     </div>Date of birth
                     <div className="form-group">
 
-                        <input type="date" id="number" name="number" value={date} 
-                         onChange={(e) => setdate(e.target.value)} placeholder="Date of birth" required="" />
+                        <input type="date" id="number" name="number" value={date}
+                            onChange={(e) => setdate(e.target.value)} placeholder="Date of birth" required />
                     </div>
 
 
                     <div className="form-group">
 
                         <input type="text" id="email" name="email" value={email}
-                            onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" required="" />
+                            onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" required />
                     </div>
                     <div className="form-group">
 
                         <input type="password" id="email" value={password}
-                            onChange={(e) => setPassword(e.target.value)} name="password" placeholder="Enter your password" required="" />
+                            onChange={(e) => setPassword(e.target.value)} name="password" placeholder="Enter your password" required />
                     </div>
                     <div className="form-group">
 
                         <input type="text" id="course" value={course}
-                            onChange={(e) => setCourse(e.target.value)} name="course" placeholder="Enter your Department" required="" />
+                            onChange={(e) => setCourse(e.target.value)} name="course" placeholder="Enter your Department" required />
+                    </div>
+                    <div className="form-group">
+
+                        <input type="text" id="course" value={year}
+                            onChange={(e) => setyear(e.target.value)} name="year" placeholder="Enter your Year" required />
                     </div>
                     <div className="form-group">
 
                         <input type="text" id="addr" name="addr" value={addr}
-                            onChange={(e) => setaddr(e.target.value)} placeholder="Address" required="" />
+                            onChange={(e) => setaddr(e.target.value)} placeholder="Address" required />
                     </div>
 
                     <button className="form-submit-btn" type="submit">Register</button>
                 </form>
                 <Link to="/login">
-                <p className="signup-link">
-                    Have an account?
-                    Login
-                </p>
+                    <p className="signup-link">
+                        Have an account?
+                        Login
+                    </p>
                 </Link>
-               
+
             </div>
 
 
@@ -127,7 +134,7 @@ const SignUp = () => {
 
 
 
-          
+
         </div>
     );
 };

@@ -26,9 +26,11 @@ const UsersList = () => {
                 <div className="admincard" key={user.id}>
                     <h1>{user.name}</h1>
                     <p>{user.course}</p>
+                    <p>Year: {user.year}</p>
                     <p>{user.email}</p>
                     <p>{user.date}</p>
                     <p>{user.number}</p>
+                    
                 </div>
 
             ))}
