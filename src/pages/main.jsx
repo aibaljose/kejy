@@ -20,14 +20,7 @@ const Main = () => {
   const [hailmary, sethailmary] = useState(0);
   const [holymass, setholymass] = useState(0);
 
-  const handleSignOut = async () => {
-    try {
-      await logout();
-      // Call the signOut function from your auth.js file
-    } catch (error) {
-      console.error('Error signing out:', error.message);
-    }
-  };
+ 
 
  
 
@@ -242,15 +235,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="bottomnav">
-        <div className="nav"> <img src={homepng} alt="" height="20px" />
-          Home</div>
-        {/* <div className="nav"> <img src={homepng} alt="" height="20px" />Gruop</div> */}
-
-        <div className="nav" onClick={openadmin}><img src={security} alt="" height="20px" /> Admin</div>
-
-        <div className="nav" onClick={handleSignOut}> <img src={homepng} alt="" height="20px" />Logout</div>
-      </div>
+   
 
     </div>
   );

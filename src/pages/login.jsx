@@ -10,7 +10,7 @@ const Login = () => {
   const { currentUser } = useAuth();
 
   if (currentUser) {
-    return <Navigate to="/main" />;
+    return <Navigate to="/home" />;
   }
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/main');
+      navigate('/home');
     } catch (error) {
       setError(error.message);
       alert("Incorrect Gmail or password")
