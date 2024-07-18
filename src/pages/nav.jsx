@@ -1,5 +1,6 @@
 import React from 'react'
 import homepng from "./css/home.png"
+import { useNavigate,Link ,Navigate } from 'react-router-dom';
 
 import logt from "./css/power-off.png"
 import inter from "./css/inter.png"
@@ -25,7 +26,7 @@ const nav = () => {
        
         if (currentUser.email == "core@ke.jy") {
           console.log("dsfsdf")
-          window.open("/admin")
+          return <Navigate to="/admin" />;
     
         }
     }
@@ -34,11 +35,13 @@ const nav = () => {
   return (
     <div>
         <div className="bottomnav">
-        <div className="nav"> <img src={homepng} onClick={()=>{window.open("/home")}} alt="" height="20px" />
-          Home</div>
+        <Link style={{ color: 'white', textDecoration: 'none' }} to="/home"> <div className="nav"> <img src={homepng}  alt="" height="20px" />
+        Home</div></Link>
+       
         {/* <div className="nav"> <img src={homepng} alt="" height="20px" />Gruop</div> */}
-
-        <div className="nav" onClick={()=>{window.open("/main")}}><img src={inter} alt="" height="20px" /> Intercession</div>
+        <Link style={{ color: 'white', textDecoration: 'none' }} to="/main"> <div className="nav" ><img src={inter} alt="" height="20px" /> Intercession</div> </Link>
+      
+        
         <div className="nav" onClick={openadmin}><img src={security} alt="" height="20px" /> Admin</div>
 
         <div className="nav" onClick={handleSignOut} > <img src={logt} alt="" height="20px" />Logout</div>

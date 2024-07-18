@@ -7,6 +7,7 @@ import { useAuth, logout } from './AuthContext';
 import Admin from './pages/admin';
 import Home from './pages/home'
 import Nav from "./pages/nav"
+import "./App.css"
 import homepng from "./pages/css/home.png"
 import logt from "./pages/css/power-off.png"
 import inter from "./pages/css/inter.png"
