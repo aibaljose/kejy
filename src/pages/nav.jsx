@@ -26,7 +26,7 @@ const nav = () => {
        
         if (currentUser.email == "core@ke.jy") {
           console.log("dsfsdf")
-          return <Navigate to="/admin" />;
+          window.open('/admin')
     
         }
     }
