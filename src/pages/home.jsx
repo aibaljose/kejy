@@ -16,7 +16,7 @@ const home = () => {
         <img src={Upimg}alt="" height='100px' />
         <div className="upcome">
             <h1>JAM<span>  ( Coming soon)</span></h1>
-            <p>Inital Program | May 18 2024</p>
+            <p>initial  Program | Loading..</p>
         </div>
     </div>
     <div className="eventmain">
@@ -25,7 +25,7 @@ const home = () => {
             <h1>Jesus and ME </h1>
         <p>എല്ലാവർക്കും സുഖമാണോ? അതോ class, exams, assignments ഒക്കെ കൊണ്ട് മടുത്ത് ഇരിക്കുവാണോ? എങ്കിൽ ആ മടുപ്പ് ഒക്കെക്കൂടി ഒരൊറ്റ ദിവസംകൊണ്ട് നമ്മുക്ക് അങ്ങ് മാറ്റിയാലോ☻? എങ്ങനെയാണെന്നല്ലേ?
 
-៣ KE College Jesus Youth++ September 22nu JAM (Jesus And Me) എന്ന ഒരു one day programme നടത്തുന്നുണ്ട് നമ്മുടെ കോളേജിലെ First years ന് വേണ്ടി ഈശോയും സീനിയേഴ്സും നടത്തുന്ന പരിപാടിയാ ഇത്. താഴെയുള്ള ലിങ്കിലൂടെയോ, പോസ്റ്ററിലുള്ള qr ലൂടെയോ നിങ്ങൾക്ക് രജിസ്റ്റർ ചെയ്യാം കേട്ടോ ☻...അപ്പൊ എല്ലാരും ഉണ്ടാവില്ലേ അന്ന്? Let's celebrate together with *Jesus
+៣ KE College Jesus Youth  JAM (Jesus And Me) എന്ന ഒരു one day programme നടത്തുന്നുണ്ട് നമ്മുടെ കോളേജിലെ First years ന് വേണ്ടി ഈശോയും സീനിയേഴ്സും നടത്തുന്ന പരിപാടിയാ ഇത്. താഴെയുള്ള ലിങ്കിലൂടെയോ, പോസ്റ്ററിലുള്ള qr ലൂടെയോ നിങ്ങൾക്ക് രജിസ്റ്റർ ചെയ്യാം കേട്ടോ ☻...അപ്പൊ എല്ലാരും ഉണ്ടാവില്ലേ അന്ന്? Let's celebrate together with Jesus
 </p>
            
         </div>
