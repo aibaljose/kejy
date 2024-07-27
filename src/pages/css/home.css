@@ -1,3 +1,127 @@
+/* * {
+
+} */
+.maincontainer {
+  width: 100%;
+  background-color: #1f1f1f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.appbar {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+}
+.appbar h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+.textr {
+  margin-top: 30px;
+  color: #5d5d5d;
+  width: 90%;
+}
+.textr h3 {
+  font-size: 14px;
+}
+
+.photocards {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-top: 30px;
+  width: 100%;
+  scrollbar-width: none;
+}
+.card1p {
+  flex: 0 0 auto;
+  border-radius: 30px;
+  height: 400px;
+  display: inline-flex;
+  width: 300px;
+  object-fit: cover;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 30px;
+}
+.carimg1 {
+  background: url("./main.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+.carimg2 {
+  background: url("./event2.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+.carimg3 {
+  background: url("./event3.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+.photocards::-webkit-scrollbar {
+  display: none;
+}
+.blurcard {
+  height: 30px;
+  width: 90%;
+  background-color: #d9d9d9c8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blurcard h4 {
+  font-weight: 300;
+}
+.imgicon {
+  height: 10px;
+  width: 10px;
+  size: 20px;
+  background: #000;
+}
+.iconimggg {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.concert {
+  padding: 10px;
+  height: 140px;
+  width: 90%;
+  background-color: #343434;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.concert img {
+  height: 80%;
+  border-radius: 24px;
+  width: 40%;
+}
+.textcon {
+  align-items: center;
+  text-align: center;
+}
+.textcon h3 {
+  color: white;
+}
+.textcon p {
+  color: rgb(174, 174, 174);
+}
+
 .home {
   background-color: #e7e7e7;
   background: url(bgg.png);
@@ -12,7 +136,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   /* filter: blur(8px); */
 }
 .eventcard {
@@ -25,7 +149,7 @@
   color: #141414;
   width: 330px;
   border: 2px solid rgba(255, 255, 255, 0.475);
-  
+
   /* background: url("https://images.unsplash.com/photo-1479107574602-b42882f52baa?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   background-position: center center;
   background-size: cover;
@@ -75,11 +199,77 @@ span {
 }
 .scroll {
   overflow: auto;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
 
   white-space: nowrap;
 }
 .scroll::-webkit-scrollbar {
   display: none;
+}
+
+.register {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+.register img {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+}
+.cardregi {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  background-color: #777777b7;
+  padding: 20px;
+  border-radius: 30px;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  min-height: 100vh;
+}
+
+.profilepql {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profilepql img {
+  height: 200px;
+}
+
+.appbar h1{
+  font-weight: 300;
+}
+
+.messagere{
+  color: white;
+  padding: 10px;
+  border: 2px dotted rgb(206, 206, 206);
+}
+fieldset{
+  width: 80%;
+  color: white;
+  padding: 10px;
+  border: 2px dotted rgba(249, 249, 249, 0.664);
+}
+legend{
+  padding: 10px;
 }

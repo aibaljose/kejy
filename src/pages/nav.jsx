@@ -1,6 +1,7 @@
 import React from 'react'
 import homepng from "./css/home.png"
 import { useNavigate,Link ,Navigate } from 'react-router-dom';
+import Rabbit from "./css/rabbit.png"
 
 import logt from "./css/power-off.png"
 import inter from "./css/inter.png"
@@ -43,8 +44,9 @@ const nav = () => {
       
         
         <div className="nav" onClick={openadmin}><img src={security} alt="" height="20px" /> Admin</div>
+        <Link style={{ color: 'white', textDecoration: 'none' }} to="/profile"> <div className="nav" ><img src={Rabbit} alt="" height="20px" />Profile</div> </Link>
 
-        <div className="nav" onClick={handleSignOut} > <img src={logt} alt="" height="20px" />Logout</div>
+        {/* <div className="nav" onClick={handleSignOut} > <img src={logt} alt="" height="20px" />Logout</div> */}
       </div>
     </div>
   )
