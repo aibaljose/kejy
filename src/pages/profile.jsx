@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useAuth, logout } from '../AuthContext';
 import { Navigate, Link, useNavigate } from 'react-router-dom';
 import { getFirestore, doc, getDoc, updateDoc, onSnapshot } from 'firebase/firestore';
-import Rabbit from "./css/rabbit.png"
+import icon from "./css/icon.png"
 const profile = () => {
 
     const [userName, setUserName] = useState(null);
@@ -50,19 +50,32 @@ const profile = () => {
                 <h1>Profile</h1>
             </div>
             <div className="profilepql">
-                <img src={Rabbit} alt="" />
+                <img src="https://icon-library.com/images/profile-picture-icon/profile-picture-icon-0.jpg" alt="" />
                 <h2> {userName}</h2>
             </div>
-          <fieldset>
-            <legend> Message </legend>
-            Teach me to do your will,
-for you are my God;
-may your good Spirit
-lead me on level ground.
-<br/>Psalm 143:10
+            <fieldset>
+                <legend> Message </legend>
+                Teach me to do your will,
+                for you are my God;
+                may your good Spirit
+                lead me on level ground.
+                <br />Psalm 143:10
 
-          </fieldset>
-          
+            </fieldset>
+            <div className="profff">
+            <div className="dv">
+                About  <img src={icon} alt="" />
+            </div>
+            <div className="dv">
+                Settings
+                <img src={icon} alt="" />
+            </div>
+            <div className="dv">
+                Developer <a href='https://aibaljose.github.io'><img src={icon} alt="" /></a>  
+            </div>
+            </div>
+           
+
 
         </div>
     )

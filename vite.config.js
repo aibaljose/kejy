@@ -8,7 +8,7 @@ export default defineConfig({
       name: 'JAM JYKE',
       short_name: 'JAM',
       description: 'Jesus youth Ke college',
-      theme_color: '#1f1f1f',
+      theme_color: '#f5f7ff',
       icons: [
         {
           src: '/image.png',

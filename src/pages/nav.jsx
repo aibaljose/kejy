@@ -44,7 +44,7 @@ const nav = () => {
       
         
         <div className="nav" onClick={openadmin}><img src={security} alt="" height="20px" /> Admin</div>
-        <Link style={{ color: 'white', textDecoration: 'none' }} to="/profile"> <div className="nav" ><img src={Rabbit} alt="" height="20px" />Profile</div> </Link>
+        <Link style={{ color: 'white', textDecoration: 'none' }} to="/profile"> <div className="nav" ><img src="https://static-00.iconduck.com/assets.00/profile-major-icon-512x512-xosjbbdq.png" alt="" height="20px" />Profile</div> </Link>
 
         {/* <div className="nav" onClick={handleSignOut} > <img src={logt} alt="" height="20px" />Logout</div> */}
       </div>

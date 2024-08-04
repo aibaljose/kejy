@@ -89,16 +89,20 @@ const home = () => {
 
             <div className="photocards">
                 <div className="card1p carimg1">
-                    <div className="blurcard"><h4>weekly gathering</h4></div>
+                    {/* <div className="blurcard"><h4>weekly gathering</h4></div> */}
                 </div>
                 <div className="card1p carimg2">
-                    <div className="blurcard"><h4>weekly gathering</h4></div>
+                    {/* <div className="blurcard"><h4>weekly gathering</h4></div> */}
                 </div>
                 <div className="card1p carimg3">
-                    <div className="blurcard"><h4>weekly gathering</h4></div>
+                    {/* <div className="blurcard"><h4>weekly gathering</h4></div> */}
                 </div>
 
             </div>
+<div className="registercard">
+    <div className="im6"></div>
+</div>
+
         </div>
     )
 }
