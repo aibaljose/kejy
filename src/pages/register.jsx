@@ -7,9 +7,9 @@ const register = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Example Image',
-          text: 'Check out this image!',
-          url: `https://aibaljose.github.io/CreSuit/img/play_store_512.png`,
+          title: 'JAM',
+          text: 'All ready for JAM',
+          url: `https://raw.githubusercontent.com/aibaljose/kejy/main/src/pages/css/ticket.png`,
         });
         console.log('Image shared successfully');
       } catch (error) {
