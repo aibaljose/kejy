@@ -96,7 +96,22 @@ padding: 20px;
 .updater{
 background-color: #ffffff23;
 padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
 color: #ffffff;
+
+padding-left: 30px;
+border-radius: 30px;
+display: flex;
+justify-content: space-between;
+}
+.updater1{
+background-color: #ffffff23;
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+color: #ffffff;
+
 padding-left: 30px;
 border-radius: 30px;
 display: flex;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth, logout } from '../AuthContext';
-import { Navigate, Link,useNavigate } from 'react-router-dom';
+import { Navigate, Link, useNavigate } from 'react-router-dom';
 import { getFirestore, doc, getDoc, updateDoc, onSnapshot } from 'firebase/firestore';
 import bg from "../assets/bg.png"
 import "./css/mainj.css"
@@ -20,9 +20,9 @@ const Main = () => {
   const [hailmary, sethailmary] = useState(0);
   const [holymass, setholymass] = useState(0);
 
- 
 
- 
+
+
 
   useEffect(() => {
 
@@ -80,7 +80,7 @@ const Main = () => {
   }
 
   const openadmin = () => {
-   
+
     if (userName == "core") {
       console.log("dsfsdf")
       window.open("/admin")
@@ -227,7 +227,7 @@ const Main = () => {
         </div>
 
 
-        <div onClick={fun1} className="updater">
+        <div onClick={fun1} className="updater1">
           <div className="conrr">
             <h3>UPDATE</h3>
           </div>
@@ -235,7 +235,7 @@ const Main = () => {
         </div>
       </div>
 
-   
+
 
     </div>
   );

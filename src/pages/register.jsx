@@ -3,12 +3,13 @@ import Upimg from "./css/image1.png"
 const register = () => {
 
   const handleShare = async () => {
-    navigator.share("hello");
+   
     if (navigator.share) {
       try {
         await navigator.share({
           title: 'JAM',
           text: 'All ready for JAM',
+          image:"https://raw.githubusercontent.com/aibaljose/kejy/main/src/pages/css/ticket.png",
           url: `https://raw.githubusercontent.com/aibaljose/kejy/main/src/pages/css/ticket.png`,
         });
         console.log('Image shared successfully');
